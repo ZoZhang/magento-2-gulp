@@ -1,6 +1,6 @@
 {
   "name": "magento-2-gulp",
-  "version": "1.0.1",
+  "version": "1.0.5",
   "description": "Gulp for Magento 2",
   "main": "gulpfile.js",
   "license": "GPL-3.0-or-later",
