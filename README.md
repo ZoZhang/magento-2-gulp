@@ -51,4 +51,5 @@ Gulp for Magento 2
     
 4. For using liveReload install extension for your browser: http://livereload.com/
 <br/>4.a. Turn on the extension on the page of project.
+<br/><strong>Note: If liveReload doesn't work, be sure to turn off Merge and Minify CSS/JavaScript Files in backend Magento</strong>
 
