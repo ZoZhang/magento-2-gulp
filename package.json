@@ -3,12 +3,13 @@
   "version": "1.0.1",
   "description": "Gulp for Magento 2",
   "main": "gulpfile.js",
+  "license": "GPL-3.0-or-later",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/subodha/magento-2-gulp.git"
+    "url": "git+https://github.com/zozhang/magento-2-gulp.git"
   },
   "author": "Subodha Pathiraja",
-  "homepage": "https://github.com/subodha/magento-2-gulp#readme",
+  "homepage": "https://github.com/zozhang/magento-2-gulp#readme",
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-less": "^3.0.3",

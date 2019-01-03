@@ -13,8 +13,8 @@
    How to use
    ========================================================================== */
 /*
-* 1. Run : php bin\magento dev:source-theme:deploy --locale="en_AU" --area="Frontend" --theme="Netstarter/YOURTHEMENAME"
-* 2. Run : php bin\magento setup:static-content:deploy en_AU
+* 1. Run : php bin\magento dev:source-theme:deploy --locale="en_AU" --area="Frontend" --theme="Vendor/YOURTHEMENAME"
+* 2. Run : php bin\magento setup:static-content:deploy -f -t YOURTHEMENAME -l en_AU
 * 3. Run gulp command in the root directory with arguments or without. Examples:<br/>
 * 3.a. Compilation of all themes: gulp<br/>
 * 3.b. Compilation of certain theme: gulp less --luma<br/>
@@ -183,8 +183,9 @@ gulp.task('exec', function (cb) {
 
 // Static content deploy task
 gulp.task('deploy', function (cb) {
+
 	if (themeName) {
-		exec('php bin/magento setup:static-content:deploy ' + themesConfig[themeName].locale + '', function (err, stdout, stderr) {
+		exec('php bin/magento setup:static-content:deploy -f -t' + themesConfig[themeName].name.split('/')[1] + ' -l ' + themesConfig[themeName].locale, function (err, stdout, stderr) {
  			console.log(stdout);
  			console.log(stderr);
  			cb(err);
